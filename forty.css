@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+} 
+ /* body{
+    background-image: url(./images/pexels-eberhardgross-534164.jpg);
+    background-repeat: no-repeat;
+    background-position : bottom center;
+    background-position-x: right;
+    background-position-y: center;
+    height: 100vh;
+    background-size: cover;
+ } */
+
+main{
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 350px 350px 350px 350px 350px 350px ;
+}
+main>#art1{
+    background-image: url(./images/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main>#art2{
+    background-image: url(./images/img2.jpg);
+    grid-column: span 2;
+    /* grid-row: span 1; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main>#art3{
+    background-image: url(./images/img3.jpg);
+    grid-column-start: span 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main>#art4{
+    background-image: url(./images/img4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main>#art5{
+    background-image: url(./images/img5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main>#art6{
+    background-image: url(./images/img6.jpg);
+    grid-column-start: span 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main>#art1>div{
+    background-color: #78c0d8cc;
+    height: 100%;
+    transition: 10ms;
+    cursor: pointer;
+}
+main>#art1>div:hover{
+    background-color: transparent;
+}
+
+main>#art2>div{
+    background-color: #877dbabf;
+    height: 100%;
+    transition: 10ms;
+    cursor: pointer;
+}
+main>#art2>div:hover{
+    background-color: transparent;
+}
+
+main>#art3>div{
+    background-color: #e49287c4;
+    height: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+main>#art3>div:hover{
+    background-color: transparent;
+}
+
+main>#art4>div{
+    background-color: #d8af89c7;
+    height: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+main>#art4>div:hover{
+    background-color: transparent;
+}
+
+main>#art5>div{
+    background-color: #7f99d0c5;
+    height: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+main>#art5>div:hover{
+    background-color: transparent;
+}
+
+main>#art6>div{
+    background-color: #7aae95bc;
+    height: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+main>#art6>div:hover{
+    background-color: transparent;
+}
+main>article>div{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+main>article>div>div{
+    margin-left: 30px;
+    color: white;
+}
+main>article>div>div>hr{
+    width: 120%;
+    height: 2.5px;
+    background-color: white;
+    border: none;
+}
+main>article>div>div>p{
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding-top: 15px;
+}
+main>article>div>div>h3{
+    font-size: 28px;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+}
+@media(max-width:600px) {
+    main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6,350px);
+    }
+    #art1, #art2, #art3, #art4, #art5, #art6{
+        grid-column: 1;
+    }
+    
+}
+@media(min-width:601px) and (max-width:1024px){
+    main{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: repeat(3,350px);
+    }
+
+    #art1{
+        grid-column:1 ;
+        grid-row: 1;
+    }
+    #art2{
+        grid-column: 2; 
+        grid-row: 1;
+    }
+    main>#art3{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #art4{
+        grid-column: 2; 
+        grid-row: 2;
+    }
+    #art5{
+        grid-column: 1;
+        grid-row: 3;
+
+    }
+    #art6{
+        grid-column: 2;
+        grid-row: 3;
+    }
+  
+}
